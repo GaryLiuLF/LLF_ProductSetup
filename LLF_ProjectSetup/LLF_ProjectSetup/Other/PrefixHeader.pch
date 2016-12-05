@@ -1,0 +1,49 @@
+//
+//  PrefixHeader.pch
+//  LLF_ProjectSetup
+//
+//  Created by Apple on 16/12/5.
+//  Copyright © 2016年 LLF. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#ifdef DEBUG
+#define Log(...) NSLog(__VA_ARGS__)
+#else
+#define Log(...)
+#endif
+
+//取得是否登录
+#define whetherLogin        [[NSUserDefaults standardUserDefaults] boolForKey:@"whetherLogin"]
+// 屏幕宽与高
+#define kScreenWidth        ([UIScreen mainScreen].bounds.size.width)
+#define kScreenHeight       ([UIScreen mainScreen].bounds.size.height)
+
+// 颜色
+#define color(r, g, b)      [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define colora(r, g, b, a)  [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+//随机色
+#define randomColor         color(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+// RGB
+#define UIColorFromRGBValue(rgbValue)   [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255 green:((float)((rgbValue & 0xFF00) >> 8))/255 blue:((float)(rgbValue & 0xFF))/255 alpha:1.0]
+//默认的统一背景色
+#define bgColor             [UIColor colorWithRed:(248)/255.0 green:(248)/255.0 blue:(248)/255.0 alpha:1.0]
+#define cellBGColor         color(255, 255, 255)
+#define cellHightBGColor    color(238, 238, 238)
+#define globalGrayColor     color(171,171,171)
+#define globalRedWordColor  color(233,75,75)
+// 设备系统版本
+#define iOS7                ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
+#define iOS8                ([[UIDevice currentDevice].systemVersion doubleValue] >= 8.0)
+#define iOS9                ([[UIDevice currentDevice].systemVersion doubleValue] >= 9.0)
+#define iOS10               ([[UIDevice currentDevice].systemVersion doubleValue] >= 10.0)
+//界面内容与界面的间隙
+#define globalAlignMargin 18.0
+
+
+
+
+#endif /* PrefixHeader_pch */
