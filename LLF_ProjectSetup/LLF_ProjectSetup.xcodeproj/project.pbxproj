@@ -17,6 +17,7 @@
 		186C24A51DF507B6008AE1E3 /* LLF_ProjectSetupUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C24A41DF507B6008AE1E3 /* LLF_ProjectSetupUITests.m */; };
 		186C24B71DF50F05008AE1E3 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C24B61DF50F05008AE1E3 /* UIView+Extension.m */; };
 		186C24BC1DF51310008AE1E3 /* LLFHelpClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C24BB1DF51310008AE1E3 /* LLFHelpClass.m */; };
+		186C26221DF80865008AE1E3 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C26211DF80865008AE1E3 /* NSString+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		186C24BA1DF51310008AE1E3 /* LLFHelpClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LLFHelpClass.h; path = Help/LLFHelpClass.h; sourceTree = "<group>"; };
 		186C24BB1DF51310008AE1E3 /* LLFHelpClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LLFHelpClass.m; path = Help/LLFHelpClass.m; sourceTree = "<group>"; };
 		186C24BD1DF513CE008AE1E3 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SynthesizeSingleton.h; path = Other/SynthesizeSingleton.h; sourceTree = "<group>"; };
+		186C26201DF80865008AE1E3 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Extension.h"; path = "Category/NSString+Extension.h"; sourceTree = "<group>"; };
+		186C26211DF80865008AE1E3 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Extension.m"; path = "Category/NSString+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +167,8 @@
 			children = (
 				186C24B51DF50F05008AE1E3 /* UIView+Extension.h */,
 				186C24B61DF50F05008AE1E3 /* UIView+Extension.m */,
+				186C26201DF80865008AE1E3 /* NSString+Extension.h */,
+				186C26211DF80865008AE1E3 /* NSString+Extension.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -323,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				186C24871DF507B6008AE1E3 /* ViewController.m in Sources */,
+				186C26221DF80865008AE1E3 /* NSString+Extension.m in Sources */,
 				186C24841DF507B6008AE1E3 /* AppDelegate.m in Sources */,
 				186C24B71DF50F05008AE1E3 /* UIView+Extension.m in Sources */,
 				186C24BC1DF51310008AE1E3 /* LLFHelpClass.m in Sources */,
@@ -477,6 +483,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LLF_ProjectSetup/Other/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/LLF_ProjectSetup/Other/SynthesizeSingleton.h";
 				INFOPLIST_FILE = LLF_ProjectSetup/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.winsafe.www.LLF-ProjectSetup";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -491,6 +498,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LLF_ProjectSetup/Other/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/LLF_ProjectSetup/Other/SynthesizeSingleton.h";
 				INFOPLIST_FILE = LLF_ProjectSetup/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.winsafe.www.LLF-ProjectSetup";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -566,6 +574,7 @@
 				186C24AB1DF507B6008AE1E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		186C24AC1DF507B6008AE1E3 /* Build configuration list for PBXNativeTarget "LLF_ProjectSetupTests" */ = {
 			isa = XCConfigurationList;
@@ -574,6 +583,7 @@
 				186C24AE1DF507B6008AE1E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		186C24AF1DF507B6008AE1E3 /* Build configuration list for PBXNativeTarget "LLF_ProjectSetupUITests" */ = {
 			isa = XCConfigurationList;
@@ -582,6 +592,7 @@
 				186C24B11DF507B6008AE1E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

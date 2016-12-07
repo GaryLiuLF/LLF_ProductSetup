@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "LLFHelpClass.h"
+#import "NSString+Extension.h"
 
 @interface ViewController ()
 
@@ -41,6 +42,8 @@
     lab2.text = str;
     lab2.numberOfLines = 0;
     [self.view addSubview:lab2];
+    
+    NSLog(@"%d",[@"dsa" isBlank]);
 }
 
 
